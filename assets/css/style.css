@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&family=Montserrat:wght@300;400;500;600&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Header section style starts here */
+.main-container-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 0 130px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-top-left{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+    align-items: center;
+}
+
+.zomato-icon a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+.location-search{
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid silver;
+    border-radius: 6px;
+    border-color: silver;
+    height: 40px;
+    box-shadow: 2px 2px 8px 4px #7676725e;
+}
+.location{
+    display: flex;
+    justify-content: center;
+}
+#location{
+    margin: 1px;
+    padding: 2px;
+    width: 18px;
+}
+
+#location-text{
+    width: 150px;
+    font-size: 20px;
+    border: none;
+    font-family: Roboto;
+    outline: none;
+}
+#search-icon{
+    width: 25px;
+    border-left: 1px solid silver;
+    padding: 5px;
+}
+#search{
+    width: 349px;
+    border: none;
+    height: 28px;
+    padding: 3px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    outline: none;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.header-top-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+.login a,.signup a{
+text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: x-large;
+
+}
+.header-middle-content{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.534);
+}
+.header-bottom{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 12px;
+}
+.delivery {
+    cursor: pointer;
+}
+.dinning{
+    cursor: pointer;
+}
+#delivery{
+    width: 114px;
+}
+#dining{
+    width: 57px;
+}
+#deliver-text,#dining-text{
+    font-size: 32px;
+color: rgba(0, 0, 0, 0.493);
+}
+.delivery:hover{
+    border-bottom: 2px solid salmon;
+    animation: border;
+}
+
+.dinning:hover{
+    border-bottom: 2px solid salmon;
+    animation: border;
+}
+hr{
+    margin: 0.5px;
+    color: rgba(0, 0, 0, 0.494);
+    width: 1151px;
+    /* padding-left: 58px; */
+    margin-left: 80px;
+}
+/* Header section ends here */
+/* main section starts here */
+.main-container-main-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0 79px;
+}
+.filter-section{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    gap: 31px;
+    margin-top: 18px;
+    margin-bottom: 30px;
+    z-index: 100;
+    background-color: white;
+    padding-bottom: 30px;
+    padding-top: 21px;
+}
+.filters{
+    border: 1px solid rgba(0, 0, 0, 0.493);
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+    border-radius: 9px;
+}
+.anchor-filter{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.493);
+}
+.anchor-filter:hover{
+    border-radius: 15px;
+    background-color:whitesmoke;
+}
+.biryani-section{
+    display: flex;
+    flex-direction: column;
+  gap: 20px;
+}
+
+.biryani-text{
+    font-size: 32px;
+    color: black;
+    font-weight: 500;
+}
+/* .card:hover{
+    border: 1px solid silver;
+    border-radius: 11px;
+    padding: 10px;
+} */
+
+/* #card-image{
+    width: 100%;
+    
+} */
+/* .card-image{
+    position: relative;
+} */
+.discount{
+    position: absolute;
+    bottom: 11px;
+    left: 8px;
+    z-index: 1;
+    background-color: rgb(37, 111, 239);
+    color: white;
+    border-radius: 5px;
+}
+.time{
+    background-color: white;
+    color: rgb(54, 54, 54);
+    position: absolute;
+    bottom: 12px;
+    right: 7px;
+    z-index: 1;
+    border-radius: 5px;
+}
+.restraunt-name{
+    display: flex;
+justify-content: space-between;
+}
+.item-name{
+    display: flex;
+    justify-content: space-between;
+margin-top: 6px;
+padding-bottom: 12px;
+border-bottom: 2px solid silver;
+}
+.extra-info{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap:12px;
+}
+#icon{
+    width: 20px;
+}
+/* .card-rating{
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    width: 51px;
+    text-align: center;
+} */
+/* .name-of-item , .card-price{
+    color: rgba(0, 0, 0, 0.432);
+} */
+.explore-options{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ul-cuisine-type{
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+.cuisines-type-options{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.521);
+
+}
+ ul #ul-li-cuisine-type{
+    list-style-type: none;
+}
+
+#product{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card{
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 12px;
+    cursor: pointer;
+    transition: transform .2s;
+    background-color: white;
+}
+.card:hover{
+    border: 1px solid silver;
+    /* border-radius: 20px; */
+    transform: scale(1.2);
+    
+   
+}
+.image-food{
+    width: 300px;
+    border-radius: 20px;
+}
+.shop-name{
+    display: flex;
+    gap: 126px;
+    align-items: center;
+    height: 30px;
+
+}
+.rating{
+    border: 1px solid black;
+    width: 57px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+}
+.item-name{
+    display:flex;
+    gap: 52px;
+    height: 30px;
+}
+.Extra-info{
+    display: flex;
+    gap: 22px;
+    border-top: 1px solid silver;
+    height: 35px;
+    align-items: center;
+}
+.icon-image{
+    width: 17px;
+}
+.outer-border{
+    display: flex;
+    flex-direction: row;
+}
+
+.off{
+    position: relative;
+    top: -32px;
+    left: 18px;
+    background: rgb(37, 111, 239);
+    width: 77px;
+    color: whitesmoke;
+}
+.time{
+    position: relative;
+    top: -52px;
+    left: 230px;
+    background-color: white;
+    color: #787878;
+    width: 60px;
+    border-radius: 5px;
+}
+
+.image{
+    position: relative;
+}
+.popular-restraunts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.restraunts-list li{
+    text-decoration: none;
+    list-style-type: none;
+
+}
+.list-of-restraunts{
+    color: #787878;
+}
+.top-restraunts-brand-name{
+    color: #787878;
+}
+.restraunts-list{
+ display: flex;
+ flex-wrap: wrap;
+ gap: 7px;
+ padding-left: 0;
+}
+.list-of-restraunts{
+    text-decoration: none;
+}
+.top-restraunts-name{
+    display: flex;
+    gap: 159px;
+
+}
+.top-restraunts-brand-name{
+    text-decoration: none;
+}
+.cities-list{
+    display: flex;
+    align-items: baseline;
+    gap: 75px;
+
+}
+.cities-name ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    list-style-type: none;
+}
+.city-name{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.589);
+}
+.main-container-footer-section{
+    background-color: aliceblue;
+}
+.footer-top{
+    display: flex;
+}
+.zomatoFooterIcon{
+    opacity: 0.2;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.country-language{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.country{
+    display: flex;
+    border: 1px solid silver;
+    align-items: center;
+    width: 135px;
+    border-radius: 12px;
+    padding: 2px;
+}
+.language{
+    display: flex;
+    align-items: center;
+    border: 1px solid silver;
+    width: 135px;
+    border-radius: 12px;
+}
+.country img{
+    width: 55px;
+    padding: 2px;
+}
+.country-name input{
+    height: 28px;
+    outline: none;
+    border: none;
+    width: 67px;
+    background: aliceblue;
+}
+.web-icon img{
+    height: 41px;
+    padding: 2px;
+}
+#LanguageSelect{
+    height: 31px;
+    border: none;
+    outline: none;
+    width: 86px;
+    background: aliceblue;
+}
+.footer-middle{
+    margin-left: 51px;
+    display: flex;
+    gap: 88px;
+    border-bottom: 1px solid silver;
+}
+.about-zomato b{
+margin-left: 40px;
+}
+.zomaverse b{
+    margin-left: 40px;
+}
+.for-restraunts b{
+    margin-left: 40px;
+}
+.learn-more b{
+    margin-left: 40px;
+}
+.social-links b{
+    margin-left: 40px;
+}
+.linkedin a img ,.instagram a img,.twitter a img,.youtube a img,.facebook a img{
+    width:  35px;
+}
+/* .instagram a img{
+    width:  25px;
+}
+.twitter a img{
+    width:  25px;
+}
+.youtube a img{
+    width:  25px;
+}
+.facebook a img{
+    width:  25px;
+} */
+.appstore a img,.playstore a img{
+    width: 175px;
+}
+.common-footer-ul{
+    list-style-type: none;
+    padding-top: 10px;
+}
+.social-icons{
+    display: flex;
+}
+.common-footer-a{
+text-decoration: none;
+color: rgba(0, 0, 0, 0.589)
+}
+.common-footer-li{
+    padding-top: 10px;
+}
+.social-links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.footer-bottom{
+    text-align: left;
+    margin: 0 53px;
+
+}
+.see-more{
+  color:   rgba(0, 0, 0, 0.589)
+}
